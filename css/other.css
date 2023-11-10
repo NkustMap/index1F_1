@@ -1,0 +1,465 @@
+/* 上方區域+漢堡選單 */
+		
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	font-family: 'Roboto', sans-serif;
+}
+li {
+	list-style: none;
+}
+
+.nav-link {
+	color: #6C6C6C; 
+	background: transparent; 
+	border: 2px transparent;
+	padding: 4px 32px;
+	text-align: center;
+	font-weight:bold;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.logo{
+	width:300;
+}
+.divide{
+	width:100%;
+}
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 1.5rem;
+	margin-right:0;
+}
+.hamburger {
+	display: none;
+}
+.bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: #101010;
+}
+.nav-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-item {
+	margin-left: 5rem;
+	margin-bottom:-15px;
+}
+.nav-link:hover{
+	color: black;
+	border-bottom: 2px solid #7B7B7B;
+}
+		
+
+/* 漢堡icon變叉叉 */
+
+.hamburger.active .bar:nth-child(2) {
+	opacity: 0;
+}
+.hamburger.active .bar:nth-child(3) {
+	transform: translateY(-8px) rotate(-45deg);
+}
+.hamburger.active .bar:nth-child(1) {
+	transform: translateY(8px) rotate(45deg);
+}
+
+		
+/* 對話外框 */
+
+.box{
+	border:  0px;
+	border-radius:10px 10px 10px 10px;
+	width: 1380px;
+	height: 520px;
+	margin: 30px;
+	margin-bottom: 0;
+	box-shadow: 0 0 20px rgba(148,148,148,10)
+}
+/* 將中間分成上下 */
+.twopart{
+	display: flex;
+	flex-direction: column;
+}
+
+/* 輸入文字的地方 */
+
+.question{
+	width: 1380px;
+	height: 0px;
+}
+
+#say{
+	width: 1250px;
+	height: 40px;
+	margin-left: 13px;
+	margin-right: 13px;
+	font-size: 21px;
+}
+#send{
+	width: 85px;
+	height: 35px;
+	font-size: 20px;
+}
+
+/* 回應區域 */
+
+#tip{
+	width: 1380px;
+	height: 450px;
+	font-size: 23px;
+	overflow: auto;
+}
+
+/* 客服端 */
+
+.customer{
+	display: flex;
+	flex-direction: row;
+}
+
+.cimg{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: -5px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+/* 顧客端 */
+
+.people{
+	display: flex;
+	flex-direction: row;
+	float: right;
+}
+
+.pimg{
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: -5px;
+	width: 70px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+
+/* 一開始對話框樣式 */
+
+.top {
+    position: relative;
+    background-color: #8E8E8E;
+    width: fit-content;
+    height: 40px;
+    color: white;
+	text-align: center;
+	font-weight:bold;
+    border-radius: 10px;
+}
+.top:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 8px solid;
+}
+
+.left:after {
+    border-right-color: #8E8E8E;
+    top: 50%;
+    right: 100%;
+    margin-top: -9px;
+}
+
+/* 問答對話框樣式 */
+	  
+.ts{
+	padding: 0.5rem ;
+	letter-spacing: 4px;
+}
+
+.replys {
+    position: relative;
+    background-color: #8E8E8E;
+    width: fit-content;
+    height: 40px;
+    color: white;
+	text-align: center;
+	font-weight:bold;
+    border-radius: 10px;
+	padding: 0.5rem ;
+	letter-spacing: 4px;
+}
+.replys:after {
+    content: "";
+	position: absolute;
+    width: 0;
+    height: 0;
+    border: 8px solid;
+}
+
+.leftt:after {
+    border-right-color: #8E8E8E;
+    top: 50%;
+    right: 100%;
+    margin-top: -9px;
+}
+
+.replyss {
+	float: right;
+    position: relative;
+    background-color: deepskyblue;
+    width: fit-content;
+    height: 40px;
+    color: white;
+	text-align: center;
+	font-weight:bold;
+    border-radius: 10px;
+	padding: 0.5rem ;
+	letter-spacing: 4px;
+}
+.replyss:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 8px solid;
+}
+
+.right:after {
+    border-left-color: deepskyblue;
+    top: 50%;
+    left: 100%;
+    margin-top: -9px;
+}
+
+/* 快捷訊息輸入 */
+
+.quickinput{
+	height: 20px;
+	width: 1380px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-top: -10px;
+}
+
+/* 快捷訊息輸入按鈕樣式 */
+
+.quick{
+	height: 30px;
+	width: fit-content;
+	font-size: 18px;
+	margin-right: 10px;
+	border: 1px solid #6C6C6C;
+	border-radius: 20px;
+	padding: 0.5rem ;
+	line-height: 2px;
+	color: black;
+}
+
+.quick:hover{
+	background-color: #BEBEBE;
+	
+}
+
+/* 響應式 */
+		
+@media only screen and (max-width: 395px) {
+		
+	/* 漢堡選單 */
+	
+	.nav-menu {
+		position: fixed;
+		left: -100%;
+		top: 5rem;
+		clear: both;
+		flex-direction: column;
+		background-color: #fff;
+		opacity: 0.95;
+		width: 100%;
+		text-align: center;
+		transition: 0.3s;
+		border-style: 5px solid #efefef;
+		box-shadow:
+			0 10px 27px rgba(0, 0, 0, 0.05);
+					
+		.nav-link:hover{
+			background: #333;
+			width:100%;
+			color: white;
+			border-bottom: 0;
+		}
+		z-index: 500;
+	}
+	.nav-menu.active {
+		left: 0;
+	}
+	.nav-item {
+		margin: 1.5rem;
+	}
+	a {
+		padding:full;
+	}
+	.nav-link{
+		font-size: 20px;
+		color: black;
+		width: 100%;
+	}
+			
+	.hamburger {
+		display: block;
+		cursor: pointer;
+	}
+	
+	/* LOGO */
+	
+	.logo{
+		width:215;
+	}
+	
+	/* 界線 */
+	
+	.range{
+		overflow:hidden;
+		width:100%;
+		height:10px;
+	}
+	.divide{
+		width:300%;
+	}
+	
+	/* 對話外框 */
+
+	.box{
+		margin: 20px;
+		width: 355px;
+		height: 550px;
+	}
+
+	/* 中間 */
+	.twopart{
+		width: 365px;
+	}
+	
+	/* 回應區域 */
+
+	#tip{
+		width: 350px;
+		height: 435px;
+		font-size: 12px;
+		overflow: auto;
+	}
+	
+	/* 客服端 */
+
+	.cimg{
+		margin-top: 0px;
+		margin-right: 15px;
+		margin-left: 15px;
+		width: 40px;
+		height: 40px;
+	}
+	
+	/* 顧客端 */
+
+	.pimg{
+		margin-top: 0px;
+		margin-left: 10px;
+		margin-right: 10px;
+		width: 45px;
+		height: 30px;
+	}
+	
+	/* 一開始對話框樣式 */
+
+	.top {
+		margin-top: 5px;
+		height: 30px;
+	}
+	
+	.left:after {
+		right: 99.85%;
+	}
+	
+	/* 輸入文字的地方 */
+
+	.question{
+		width: 370px;
+	}
+
+	#say{
+		width: 245px;
+		height: 40px;
+		margin-left: 13px;
+		margin-right: 13px;
+		font-size: 21px;
+	}
+	#send{
+		width: 73px;
+		height: 35px;
+		font-size: 18px;
+	}
+	
+	/* 問答對話框樣式 */
+	
+	.ts{
+		padding: 0.5rem ;
+		letter-spacing: 2px;
+	}
+	.replys {
+		margin-top: 5px;
+		height: 30px;
+		letter-spacing: 2px;
+	}
+	.leftt:after {
+		right: 99.85%;
+	}
+	
+	.replyss {
+		height: 30px;
+		letter-spacing: 2px;
+	}
+	.right:after {
+		left: 99.4%;
+	}
+
+	/* 快捷訊息輸入 */
+	
+	.quickinput{
+		height: 40px;
+		width: 310px;
+	}
+	
+	.quickinput{
+		margin-top: 10px;
+		margin-bottom: 0px;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		white-space: nowrap;
+	}
+	
+	::-webkit-scrollbar {
+		display: none; /* Chrome Safari */
+	}
+	
+	.quick{
+		font-size: 15px;
+	}

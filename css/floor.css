@@ -1,0 +1,429 @@
+/* 上方區域+漢堡選單 */
+		
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	font-family: 'Roboto', sans-serif;
+}
+li {
+	list-style: none;
+}
+a {
+	color: #6C6C6C; 
+	background: transparent; 
+	border: 2px transparent;
+	padding: 4px 32px;
+	text-align: center;
+	font-weight:bold;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.logo{
+	width:300;
+}
+.divide{
+	width:100%;
+}
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 1.5rem;
+	margin-right:0;
+}
+.hamburger {
+	display: none;
+}
+.bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: #101010;
+}
+.nav-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-item {
+	margin-left: 5rem;
+	margin-bottom:-15px;
+}
+.nav-link:hover{
+	color: black;
+}
+		
+
+/* 漢堡icon變叉叉 */
+
+.hamburger.active .bar:nth-child(2) {
+	opacity: 0;
+}
+.hamburger.active .bar:nth-child(3) {
+	transform: translateY(-8px) rotate(-45deg);
+}
+.hamburger.active .bar:nth-child(1) {
+	transform: translateY(8px) rotate(45deg);
+}
+
+/* 樓層按鈕 */	
+
+.s_gray2 {
+    background: #f8f8f8 !important;
+    padding: 1px 0;
+    position: relative;
+	z-index: 0;
+}
+
+.wrapper1 {
+    max-width: 1500px;
+    padding: 1px 15px;
+    margin: auto;
+    position: relative;
+}
+
+#floor .list, #brand .list {
+    padding: 1%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#floor .list ul, #brand .list ul {
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 0px;
+}
+
+#floor .list ul li, #brand .list ul li {
+    position: relative;
+    display: inline-block;
+    width: 85px;
+}
+
+#floor .list ul a, #brand .list ul a {
+    text-decoration: none;
+	margin-left: -22px;
+}
+
+#floor .list ul a h6, #brand .list ul a h6 {
+    background: #fff;
+    font: 1rem arial;
+    margin: 5px 2px;
+    font-family: "微軟正黑體", sans-serif;
+    text-decoration: none;
+    color: #666;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 9;
+}
+
+#floor .list ul a h6 span, #brand .list ul a h6 span {
+    display: block;
+    padding: 3px;
+}
+
+#floor .list ul a:hover .flow_num, #brand .list ul a:hover .flow_num {
+    color: #fff;
+}
+
+#floor .list ul a:hover .flow_num:after, #brand .list ul a:hover .flow_num:after {
+    opacity: 1;
+    padding: 1.5em;
+}
+
+#floor .list ul a:hover h6, #brand .list ul a:hover h6 {
+    color: #fff;
+    background: #0F9BAF !important;
+}
+
+#floor .list ul a:after, #brand .list ul a:after {
+    content: '';
+    width: 1px;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    z-index: 0;
+    height: 30px;
+    margin-top: 20px;
+    background: #CCCCCC;
+}
+
+#floor .list ul a .flow_num, #brand .list ul a .flow_num {
+    color: #303030;
+    font-size: 1.5rem;
+    padding: 14px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+    font-weight: bold !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#floor .list ul a .flow_num span, #brand .list ul a .flow_num span {
+    z-index: 2;
+	font-size: 30px;
+}
+
+#floor .list ul a .flow_num:after, #brand .list ul a .flow_num:after {
+    content: '';
+    z-index: 1;
+    border-radius: 50px;
+    background: #33c2d7;
+    opacity: 0;
+    width: 20px;
+    position: absolute;
+    height: 20px;
+	
+}
+
+#floor .list ul .atcive .flow_num, #brand .list ul .atcive .flow_num {
+    color: #fff;
+}
+
+#floor .list ul .atcive .flow_num:after, #brand .list ul .atcive .flow_num:after {
+    opacity: 1;
+    padding: 1.5em;
+}
+
+#floor .list ul .atcive h6, #brand .list ul .atcive h6 {
+    color: #fff;
+    background: #0F9BAF !important;
+}
+
+/* 現在位置圖片 */
+
+.nowplace{
+	display:block;
+	margin:auto;
+}
+
+/* 現在樓層字體大小 */
+
+.articletext{
+    font-size: 80px;
+    text-align: center;
+    margin: 20px;
+}
+
+/* 圖片排列 */
+.article .wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+    gap: 20px; /* Gap between items */
+    justify-content: center;
+}
+
+.article .wrap .item {
+    text-align: center;
+    box-shadow: 1px 5px 5px grey;
+    cursor: pointer; /* Add cursor pointer for clickable items */
+	width: 300px;
+}
+
+.article{
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+.article p {
+    padding: 10px;
+}
+
+
+/* 小方框 */
+.modal {
+	width: 30%; 
+	height: 60%; 
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1; /* Ensure the modal appears above other content */
+}
+
+.modal img {
+    max-width: 100%;
+    height: auto;
+	margin-bottom: 10px;
+}
+
+.modal p {
+    font-size: 18px;
+}
+
+/* 叉叉 */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #000;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #f00; /* Change the color on hover */
+}
+
+
+
+/* 響應式 */
+		
+@media only screen and (max-width: 395px) {
+		
+		
+	/* 漢堡選單 */
+	
+	.nav-menu {
+		position: fixed;
+		left: -100%;
+		top: 5rem;
+		clear: both;
+		flex-direction: column;
+		background-color: #fff;
+		opacity: 0.95;
+		width: 100%;
+		text-align: center;
+		transition: 0.3s;
+		border-style: 5px solid #efefef;
+		box-shadow:
+			0 10px 27px rgba(0, 0, 0, 0.05);
+					
+		.nav-link:hover{
+			background: #333;
+			width:100%;
+			color: white;
+			border-bottom: 0;
+		}
+		z-index: 500;
+	}
+	.nav-menu.active {
+		left: 0;
+	}
+	.nav-item {
+		margin: 1.5rem;
+	}
+	a {
+		font-size: 20px;
+		padding:full;
+	}
+	.nav-link{
+		color: black;
+		width: 100%;
+	}
+			
+	.hamburger {
+		display: block;
+		cursor: pointer;
+	}
+	
+	/* LOGO */
+	
+	.logo{
+		width:215;
+	}
+	
+	/* 界線 */
+	
+	.range{
+		overflow:hidden;
+		width:100%;
+		height:10px;
+	}
+	.divide{
+		width:300%;
+	}
+	
+	/* 樓層按鈕 */
+	
+	#floor .list ul a, #brand .list ul a {
+		margin-left: -6px;
+	}
+	
+	/* 目前樓層字體大小 */
+	
+	.articletext{
+		font-size: 50px;
+	}
+	
+	
+	/* 現在位置圖片 */
+
+	.nowplace{
+		width: 90%;
+		height: 40%;
+		margin-top: -10px;
+	}
+	
+	/* 直向排列 */
+	
+	.article .wrap {
+		display: relative;
+		grid-template-columns: repeat(1, 1fr); /* 4 columns with equal width */
+		margin-left: 27px;
+		margin-bottom: 20px;
+	}
+	
+	
+	/* 介紹方框裡的圖片 */
+	
+	.article .wrap .item {
+		line-height: 2;
+		margin-top: 10px;
+		width: 300px;
+	}
+	
+	.place{
+		width: 300px;
+		height: 170px;
+	}
+	
+	/* 小方框 */
+	.modal {
+		width: 70%; 
+		height: 50%; 
+		top: 50%;
+	}
+	
+	/* 叉叉 */
+	.close {
+		font-size: 30px;
+		right: 15px;
+		top: 5px;
+	}
+	

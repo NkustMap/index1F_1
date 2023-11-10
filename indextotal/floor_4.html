@@ -1,0 +1,184 @@
+<html>
+
+<head>
+
+	<title>樓層介紹</title>
+	
+	<link rel="icon" href="..\pic\msys_1000_5641621_64001.ico" />
+	
+	<!-- 響應式 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<style>
+	
+		@import "../css/floor.css";
+		
+	</style>
+</head>
+
+<body>
+
+	<header class="header">
+        <nav class="navbar">
+            <img class="logo" alt="國立高雄科技大學 校徽 LOGO" src="..\pic\182513897.png"/>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="mapT.html" target="_self" class="nav-link">地圖總攬</a>
+                </li>
+                <li class="nav-item">
+                    <a href="floor_1.html" target="_self" class="nav-link">樓層介紹</a>
+                </li>
+                <li class="nav-item">
+                    <a href="..\index.html" target="_self" class="nav-link">目前位置</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.nkust.edu.tw/" target="_self" class="nav-link">關於我們</a>
+                </li>
+				<li class="nav-item">
+                    <a href="other.html" target="_self" class="nav-link">其他協助</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+		<div class="divide1">
+			<div class="range">
+				<img class="divide" src="..\pic\abc.JPG">
+			</div>
+		</div>
+	</header>
+	
+	<div class="s_gray2">
+        <div class="wrapper1">
+            <div class="row">
+                <div class="col-md-12">
+                    <article class="mt-5 mb-3" id="floor">
+                        <div class="list">
+                            <ul>
+                                <li>
+                                    <a href="floor.html" target="_self" class="nav-link">
+                                        <div class="flow_num"><span>B1</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="floor_1.html" target="_self" class="nav-link">
+                                        <div class="flow_num"><span>1F</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="floor_2.html" target="_self" class="nav-link">
+                                        <div class="flow_num"><span>2F</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="floor_3.html" target="_self" class="nav-link">
+                                        <div class="flow_num"><span>3F</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="floor_4.html" target="_self" class="nav-link">
+                                        <div class="flow_num"><span>4F</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="floor_5.html" target="_self" class="nav-link">
+                                        <div class="flow_num"><span>5F</span></div>
+                                    </a>
+                                </li>
+							</ul>
+						</div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div class="articletext">4F</div>
+	
+	<img class="nowplace" src = "..\pic\floor4F.png" alt=""/>
+	
+	<div class="article">
+       
+        <div class="wrap">
+            <div class="item" onclick="showPopup('4F_1.jpg', '教室裡有一面大鏡子')"> 
+                <img class="place" src="..\pic\4F_1.jpg" alt="">
+                <p>1 音樂教室</p>
+            </div>
+            <div class="item" onclick="showPopup('4F_2.jpg', '第二間...')">
+                <img class="place" src="..\pic\4F_2.jpg" alt="">
+                <p>2 音樂教室</p>
+            </div>
+            <div class="item" onclick="showPopup('4F_3.jpg', '~~~')">
+                <img class="place" src="..\pic\4F_3.jpg" alt="">
+                <p>3 舞蹈教室</p>
+            </div>
+			<div class="item" onclick="showPopup('4F_4.jpg', '~~~')">
+                <img class="place" src="..\pic\4F_4.jpg" alt="">
+                <p>4 地板教室</p>
+            </div>
+			<div class="item" onclick="showPopup('4F_5.jpg', '~~~')">
+                <img class="place" src="..\pic\4F_5.jpg" alt="">
+                <p>5 團康教室</p>
+            </div>
+        </div>
+    </div>
+	
+	<div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="">
+        <p id="modalText"></p>
+    </div>
+	
+	<script>
+	
+	<!-- 漢堡選單程式 -->
+	const hamburger = document.querySelector(".hamburger");
+	const navMenu = document.querySelector(".nav-menu");
+
+	hamburger.addEventListener("click", mobileMenu);
+
+	function mobileMenu() {
+		hamburger.classList.toggle("active");
+		navMenu.classList.toggle("active");
+	}
+	const navLink = document.querySelectorAll(".nav-link");
+
+	navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+	function closeMenu() {
+		hamburger.classList.remove("active");
+		navMenu.classList.remove("active");
+	}
+	</script>
+	
+	<script>
+        function showPopup(imageSrc, text) {
+            const modal = document.getElementById('myModal');
+            const modalImage = document.getElementById('modalImage');
+            const modalText = document.getElementById('modalText');
+
+            modalImage.src = imageSrc;
+            modalText.textContent = text;
+
+            modal.style.display = 'block';
+
+            modal.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    closeModal();
+                }
+            });
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('myModal');
+            modal.style.display = 'none';
+        }
+    </script>
+	
+</body>
+
+</html>
+			

@@ -1,0 +1,363 @@
+/* 上方區域+漢堡選單 */
+		
+		
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	font-family: 'Roboto', sans-serif;
+}
+		
+li {
+	list-style: none;
+}
+a {
+	color: #6C6C6C; 
+	background: transparent; 
+	border: 2px transparent;
+	padding: 4px 32px;
+	text-align: center;
+	font-weight:bold;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.logo{
+	width:300;
+}
+.divide{
+	width:100%;
+}
+		
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 1.5rem;
+	margin-right:0;
+}
+.hamburger {
+	display: none;
+}
+.bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: #101010;
+}
+.nav-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-item {
+	margin-left: 5rem;
+	margin-bottom:-15px;
+}
+.nav-link:hover{
+	color: black;
+	border-bottom: 2px solid #7B7B7B;
+}
+		
+
+/* 漢堡icon變叉叉 */
+.hamburger.active .bar:nth-child(2) {
+	opacity: 0;
+}
+.hamburger.active .bar:nth-child(3) {
+	transform: translateY(-8px) rotate(-45deg);
+}
+.hamburger.active .bar:nth-child(1) {
+	transform: translateY(8px) rotate(45deg);
+}
+
+		
+/* 下方區域 */
+	
+.nowplace{
+	margin-top:20;
+	margin-bottom:30;
+	font-weight:bold;
+	font-size: 30px;
+}
+.below{
+	display:flex;
+	width:full;
+	height: 490px;
+	margin-left:110;
+	margin-right:110;
+}
+.rrr{
+	float: right;
+}
+.picL{
+	width:100%;
+	margin-right:80;
+}
+.picR{
+	width:400px;
+	margin-bottom:30;
+}
+		
+/* 選擇前往地點的按鈕 */
+.placebut{
+	width:500px;
+	margin-left:-35;
+}
+		
+/* 選擇前往地點的按鈕樣式 */
+.btn-80,
+.btn-80 *,
+.btn-80 :after,
+.btn-80 :before,
+.btn-80:after,
+.btn-80:before {
+	border: 0 solid;
+	box-sizing: border-box;
+}
+.btn-80 {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-appearance: button;
+	background-color: #000;
+	background-image: none;
+	color: #fff;
+	cursor: pointer;
+	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+		Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+		Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+	font-size: 200%;
+	font-weight: 900;
+	line-height: 1.5;
+	margin: 10;
+	-webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+	padding: 0;
+	display: inline-block;
+	}
+	.btn-80:disabled {
+		cursor: default;
+	}
+	.btn-80:-moz-focusring {
+		outline: auto;
+	}
+	.btn-80 svg {
+		display: block;
+		vertical-align: middle;
+	}
+	.btn-80 [hidden] {
+		display: none;
+	}
+	.btn-80 {
+		border: 2px solid;
+		border-radius: 999px;
+		box-sizing: border-box;
+		display: block;
+		overflow: hidden;
+		padding: 1.2rem 3rem;
+		position: relative;
+		text-transform: uppercase;
+		display: inline-block;
+	}
+	.btn-80 span {
+		font-weight: 900;
+		mix-blend-mode: difference;
+	}
+	.btn-80:before {
+		background: #fff;
+		content: "";
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+	}
+	.btn-80:hover:before {
+		-webkit-animation: progress-bar 1.2s;
+		animation: progress-bar 1.2s;
+	}
+	@-webkit-keyframes progress-bar {
+		0% {
+			opacity: 1;
+			width: 0;
+		}
+		10% {
+			opacity: 1;
+			width: 15%;
+		}
+		25% {
+			opacity: 1;
+			width: 25%;
+		}
+		40% {
+			opacity: 1;
+			width: 35%;
+		}
+		55% {
+			opacity: 1;
+			width: 75%;
+		}
+		60% {
+			opacity: 1;
+			width: 100%;
+		}
+		to {
+			opacity: 0;
+			width: 100%;
+		}
+	}
+	@keyframes progress-bar {
+		0% {
+			opacity: 1;
+			width: 0;
+		}
+		10% {
+			opacity: 1;
+			width: 15%;
+		}
+		25% {
+			opacity: 1;
+			width: 25%;
+		}
+		40% {
+			opacity: 1;
+			width: 35%;
+		}
+		55% {
+			opacity: 1;
+			width: 75%;
+		}
+		60% {
+			opacity: 1;
+			width: 100%;
+		}
+		to {
+			opacity: 0;
+			width: 100%;
+		}
+	}
+
+		
+/* 背景 */
+		
+.backg{
+	weight:full;
+	margin-top: 0;
+	background-image: url("../pic/fff.jpg");
+	background-size: 100%;
+	background-repeat: repeat;
+}
+
+
+/* 響應式 */
+		
+@media only screen and (max-width: 395px) {
+			
+	/* 漢堡選單 */
+	.nav-menu {
+		position: fixed;
+		left: -100%;
+		top: 5rem;
+		clear: both;
+		flex-direction: column;
+		background-color: #fff;
+		opacity: 0.95;
+		width: 100%;
+		text-align: center;
+		transition: 0.3s;
+		border-style: 5px solid #efefef;
+		box-shadow:
+			0 10px 27px rgba(0, 0, 0, 0.05);
+					
+		.nav-link:hover{
+			background: #333;
+			width:100%;
+			color: white;
+			border-bottom: 0;
+		}
+	}
+	.nav-menu.active {
+		left: 0;
+	}
+	.nav-item {
+		margin: 1.5rem;
+	}
+	a {
+		font-size: 20px;
+		padding:full;
+	}
+	.nav-link{
+		color: black;
+		width: 100%;
+	}
+			
+	.hamburger {
+		display: block;
+		cursor: pointer;
+	}
+	/* 背景 */
+	.backg{
+		height: 620px;
+		weight: 395px;
+		margin-top: 0;
+		background-image: url("../pic/backgg.jpg");
+		background-repeat: repeat;
+	}
+	/* LOGO */
+	.logo{
+		width:215;
+	}
+	/* 界線 */
+	.range{
+		overflow:hidden;
+		width:100%;
+		height:10px;
+	}
+	.divide{
+		width:300%;
+	}
+	/* 現在位置 */
+	.nowplace{
+		margin-top:10;
+		margin-bottom:20;
+		font-size: 16px;
+	}
+	/* 現在地圖 */
+	.below{
+		flex-direction: column;
+		width:365px;
+		height:350px;
+		margin-left:20;
+	}
+	.picL{
+		float: center;
+		width:95%;
+		margin-bottom:30;
+	}
+	.picR{
+		margin-left:30;
+		float:center;
+		width:70%;
+		margin-bottom:10;
+	}
+	/* 現在位置按鈕 */
+	.btn-80{
+		font-size:13px;
+		margin-right: 5px;
+		margin-left: 6px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.placebut{
+		width:395px;
+		margin-left:-25;
+	}
+}

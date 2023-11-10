@@ -1,0 +1,361 @@
+/* 上方區域+漢堡選單 */
+		
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	font-family: 'Roboto', sans-serif;
+}
+li {
+	list-style: none;
+}
+a {
+	color: #6C6C6C; 
+	background: transparent; 
+	border: 2px transparent;
+	padding: 4px 32px;
+	text-align: center;
+	font-weight:bold;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.logo{
+	width:300;
+	}
+.divide{
+	width:100%;
+	}
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 1.5rem;
+	margin-right:0;
+}
+.hamburger {
+	display: none;
+}
+.bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: #101010;
+}
+.nav-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-item {
+	margin-left: 5rem;
+	margin-bottom:-15px;
+}
+.nav-link:hover{
+	color: black;
+	border-bottom: 2px solid #7B7B7B;
+}
+		
+
+/* 漢堡icon變叉叉 */
+.hamburger.active .bar:nth-child(2) {
+	opacity: 0;
+}
+.hamburger.active .bar:nth-child(3) {
+	transform: translateY(-8px) rotate(-45deg);
+}
+.hamburger.active .bar:nth-child(1) {
+	transform: translateY(8px) rotate(45deg);
+}
+/* 背景 */
+		
+.backg{
+	weight: full;
+	height: 540px;
+	margin-top: 0;
+	background-image: url("../pic/fff.jpg");
+	background-size: 100%;
+	background-repeat: repeat;
+}
+		
+/* 中間 */
+		
+.RL{
+　	width:1000px;
+	margin-top: 20px;
+	margin-left: 40px;
+	margin-right: 40px;
+	overflow: hidden; /* 避免長方框下面顯示不正常 */
+　	float:left;
+　	height:300px;
+　	text-align:center;
+}
+		
+/* 左邊 */
+		
+.left{
+	width: 300px;
+	float:left;
+	margin-left: 55px;
+	margin-top: 20px;
+}
+		
+/* 右邊 */
+		
+.right{
+	float: right;
+	width: 800px;
+	margin-right: 60px;
+	margin-top: 40px;
+}
+	
+	
+/* 樓層介紹字 */
+		
+h2 {
+	font-size: 24px;
+}
+		
+.onion-title-wrap {
+	overflow: hidden;
+	margin-bottom: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+.onion-title {
+	position: relative;
+	display: inline-block;
+	top: 50%;
+}
+
+.title-left {
+	right: 100%;
+	margin-right: 0.5em;
+}
+
+.title-right {
+	left: 100%;
+	margin-left: 0.5em;
+}
+
+.title-holder {
+	position: absolute;
+	display: block;
+	top: 49.99%;
+	width: 2000px;
+	border-top: 1px solid #101010;
+	content: '';
+}
+
+span.en-title {
+	font-size: 13px;
+	display: block;
+	text-transform: uppercase;
+	/*line-height: 1;*/
+}
+
+.onion-title span.en-title {
+	font-size: 15px;
+}
+			
+/* 樓層下拉式選單 */
+		
+select{
+	font-size: 24px;
+	width: 305px;
+	height: 45px;
+	text-align: center;
+}
+		
+.space-20 {
+	height: 15px;
+}
+		
+/* 樓層介紹圖片 */	
+
+#image {
+  background: Orange;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+  width: 800px;
+  height: 450px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+ 
+  100% {
+    opacity: 1;
+  }
+}
+ 
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+ 
+  100% {
+    opacity: 1;
+  }
+}
+ 
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+ 
+  100% {
+    opacity: 1;
+  }
+}
+ 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+ 
+  100% {
+    opacity: 1;
+  }
+}
+ 
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+ 
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* 響應式 */
+		
+@media only screen and (max-width: 395px) {
+		
+		
+			
+	/* 漢堡選單 */
+	.nav-menu {
+		position: fixed;
+		left: -100%;
+		top: 5rem;
+		clear: both;
+		flex-direction: column;
+		background-color: #fff;
+		opacity: 0.95;
+		width: 100%;
+		text-align: center;
+		transition: 0.3s;
+		border-style: 5px solid #efefef;
+		box-shadow:
+			0 10px 27px rgba(0, 0, 0, 0.05);
+					
+		.nav-link:hover{
+			background: #333;
+			width:100%;
+			color: white;
+			border-bottom: 0;
+		}
+		z-index: 500;
+	}
+	.nav-menu.active {
+		left: 0;
+	}
+	.nav-item {
+		margin: 1.5rem;
+	}
+	a {
+		font-size: 20px;
+		padding:full;
+	}
+	.nav-link{
+		color: black;
+		width: 100%;
+	}
+			
+	.hamburger {
+		display: block;
+		cursor: pointer;
+	}
+			
+	/* LOGO */
+	.logo{
+		width:215;
+	}
+	/* 界線 */
+	.range{
+		overflow:hidden;
+		width:100%;
+		height:10px;
+	}
+	.divide{
+		width:300%;
+	}
+	
+	/* 背景 */
+	.backg{
+		height: 580px;
+		margin-top: 0;
+		background-image: url("../pic/backgg.jpg");
+		background-repeat: repeat;
+	}
+	
+	/* 中間 */
+	h2 {
+		font-size: 20px;
+	}
+	.RL{
+		flex-direction: column;
+		width:95%;
+		height:100%;
+		margin-bottom: 25px;
+		margin-right: 20px;
+		margin-left: 10px;
+		margin-top: 15px;
+	}
+	.left{
+		float: center;
+		margin-left: 20px;
+	}
+	.right{
+		float: left;
+		margin-left: 5px;
+	}
+	#image {
+		width: 365px;
+		height: 400px;
+	}
+	.onion-title-wrap{
+		margin-left: 15px;
+	}
+	#dropdown{
+		
+		margin-left: 15px;
+	}
+	/* 樓層下拉式選單 */
+		
+	select{
+		margin-left: 15px;
+		font-size: 20px;
+		width: 300px;
+		height: 40px;
+	}

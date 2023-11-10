@@ -1,0 +1,104 @@
+<html>
+
+<head>
+
+	<title>NKUST-map</title>
+	
+	<link rel="icon" href="pic\msys_1000_5641621_64001.ico" />
+	
+	<!-- 響應式 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<style>
+	
+	    @import "css/Index.css";
+		
+	</style>
+</head>
+
+<body>
+
+	<header class="header">
+        <nav class="navbar">
+            <img class="logo" alt="國立高雄科技大學 校徽 LOGO" src="pic\182513897.png"/>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="indextotal\mapT.html" target="_self" class="nav-link">地圖總攬</a>
+                </li>
+                <li class="nav-item">
+                    <a href="indextotal\floor_1.html" target="_self" class="nav-link">樓層介紹</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" target="_self" class="nav-link">目前位置</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.nkust.edu.tw/" target="_self" class="nav-link">關於我們</a>
+                </li>
+				<li class="nav-item">
+                    <a href="indextotal\other.html" target="_self" class="nav-link">其他協助</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+		<div class="divide1">
+			<div class="range">
+				<img class="divide" src="pic\abc.JPG">
+			</div>
+		</div>
+	</header>
+	
+	<div class="backg">
+		
+		<div class="nowplace">
+			<center><p>📍 目前所在的地點為K棟「活動中心」</p></center>
+		</div>
+		<div class="below">
+				<img class="picL" src="pic\n1.png">
+				<div class="rrr">
+				<img class="picR" src="pic\456.png">
+				
+				<div class="placebut">
+					<center>
+					<button class="btn-80" onclick="self.location.href='https://kuku555.github.io/indextotal/but711.html'"><span>7-11</span></button>
+					<button class="btn-80" onclick="self.location.href='https://kuku555.github.io/indextotal/buteat.html'"><span>學餐</span></button>
+					<button class="btn-80" onclick="self.location.href='https://kuku555.github.io/indextotal/butstationery.html'"><span>圖文部</span></button>
+					<button class="btn-80" onclick="self.location.href='https://kuku555.github.io/indextotal/butcopy.html'"><span>影印部</span></button>
+					<button class="btn-80" onclick="self.location.href='https://kuku555.github.io/indextotal/butphysical.html'"><span>體育館</span></button>
+					<button class="btn-80" onclick="self.location.href='https://kuku555.github.io/indextotal/butdance.html'"><span>舞蹈教室</span></button>
+					<button class="btn-80" onclick="self.location.href='https://kuku555.github.io/indextotal/butactivities.html'"><span>團康教室</span></button>
+					<button class="btn-80" onclick="self.location.href='https://kuku555.github.io/indextotal/butfloor.html'"><span>地板教室</span></button>
+					<button class="btn-80" onclick="self.location.href='https://kuku555.github.io/indextotal/buttabletennis.html'"><span>桌撞球室</span></button>
+					</center>
+				</div>
+				
+				</div>
+		</div>
+	</div>
+	
+	<script>
+	const hamburger = document.querySelector(".hamburger");
+	const navMenu = document.querySelector(".nav-menu");
+
+	hamburger.addEventListener("click", mobileMenu);
+
+	function mobileMenu() {
+		hamburger.classList.toggle("active");
+		navMenu.classList.toggle("active");
+	}
+	const navLink = document.querySelectorAll(".nav-link");
+
+	navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+	function closeMenu() {
+		hamburger.classList.remove("active");
+		navMenu.classList.remove("active");
+	}
+	</script>
+</body>
+
+</html>
+			
