@@ -245,7 +245,10 @@ a {
     text-align: center;
     box-shadow: 1px 5px 5px grey;
     cursor: pointer; /* Add cursor pointer for clickable items */
-	width: 300px;
+    width: 300px;
+    margin-top: 5px;
+    line-height: 24px;
+    letter-spacing: 3px;
 }
 
 .article{
