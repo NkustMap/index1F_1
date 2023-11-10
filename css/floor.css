@@ -286,6 +286,14 @@ a {
     font-size: 18px;
 }
 
+/* 介紹文字 */
+
+.itext{
+	margin-top: 5px;
+	line-height: 24px;
+	letter-spacing: 3px;
+}
+
 /* 叉叉 */
 .close {
     position: absolute;
