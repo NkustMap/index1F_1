@@ -419,6 +419,13 @@ a {
 		height: 50%; 
 		top: 50%;
 	}
+
+	/* 方框裡的文字 */
+	.article .wrap .item {
+   		margin-top: 5px;
+		line-height: 24px;
+		letter-spacing: 3px;
+	}
 	
 	/* 叉叉 */
 	.close {
