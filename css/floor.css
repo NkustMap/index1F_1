@@ -246,9 +246,6 @@ a {
     box-shadow: 1px 5px 5px grey;
     cursor: pointer; /* Add cursor pointer for clickable items */
     width: 300px;
-    margin-top: 5px;
-    line-height: 24px;
-    letter-spacing: 3px;
 }
 
 .article{
@@ -421,13 +418,6 @@ a {
 		width: 70%; 
 		height: 50%; 
 		top: 50%;
-	}
-
-	/* 方框裡的文字 */
-	.article .wrap .item {
-   		margin-top: 5px;
-		line-height: 24px;
-		letter-spacing: 3px;
 	}
 	
 	/* 叉叉 */
