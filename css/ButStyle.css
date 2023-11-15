@@ -162,14 +162,14 @@ a {
 .item-word {
 	width:999px;
 	height:500px;
-	margin: 5px auto;			
+	margin: 5px auto;
 }
 		
 .word {
 	width:700px;
 	height:500px;
 	margin:  auto;
-	border: 3px solid black;
+	border: 3px solid #c0c0c0;
 	font-size: 20px;	
 }
 				
