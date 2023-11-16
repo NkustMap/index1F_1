@@ -163,6 +163,7 @@ a {
 	width:999px;
 	height:500px;
 	margin: 5px auto;
+	background-color:white;
 }
 		
 .word {
@@ -201,6 +202,23 @@ img{
 	height: 50%;
 	object-fit: cover;
 }
+
+/* 小圖片 */
+.icon-lost-people{
+	width:128px;
+	height:128px;
+	position:absolute;
+	top:800px;
+	left:150px;
+}
+
+/* 背景 */
+	.backg{
+		height: 1400px;
+		margin-top: 0;
+		background-image: url("../pic/backgg.jpg");
+		background-repeat: repeat;
+	}
 		
 
 /* 響應式 */
@@ -265,6 +283,16 @@ img{
 	}
 	.divide{
 		width:300%;
+	}
+
+	/* 背景 */
+		
+	.backg{
+		weight:full;
+		margin-top: 0;
+		background-image: url("../pic/fff.jpg");
+		background-size: 100%;
+		background-repeat: repeat;
 	}
 			
 	/* 現在位置 */
