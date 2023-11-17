@@ -136,13 +136,13 @@
 	 var cot = 0;
 		function nex(){
 			if(cot <= 7){
-				$('.list .photo').eq(cot).animate({'margin-left':'-999px'},999);
+				$('.list .photo').eq(cot).animate({'margin-left':'-999px'},400);
 				cot ++;
 			}
 		}
 		function pre(){
         if(cot > -1){
-            $('.list .photo').eq(cot).animate({'margin-left':'0px'},999);
+            $('.list .photo').eq(cot).animate({'margin-left':'0px'},400);
             cot--;
         }
 		}
