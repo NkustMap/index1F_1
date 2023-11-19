@@ -289,6 +289,7 @@ img{
 		
 	.backg{
 		weight:full;
+		height: 500px;
 		margin-top: 0;
 		background-image: url("../pic/fff.jpg");
 		background-size: 100%;
