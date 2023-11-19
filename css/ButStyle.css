@@ -346,6 +346,8 @@ img{
 		height:300px;
 		margin-left: 15px;
 		font-size: 18px;
+	}
+	.word.p{
 		line-height: 24px;　
 		letter-spacing: 3px;
 	}
