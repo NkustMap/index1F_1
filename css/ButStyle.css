@@ -289,11 +289,10 @@ img{
 	/* 背景 */
 		
 	.backg{
-		weight:full;
-		height: 500px;
+		height: 620px;
+		weight: 395px;
 		margin-top: 0;
-		background-image: url("../pic/fff.jpg");
-		background-size: 100%;
+		background-image: url("../pic/backgg.jpg");
 		background-repeat: repeat;
 	}
 			
