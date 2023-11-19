@@ -364,8 +364,9 @@ img{
 		width:80px;
 		height:80px;
 		position: relative:
-		top: 700px;
-		left:300px;
+		top:700px;
+		bottom: 100px;
+		left:500px;
 	}
 		
 }
