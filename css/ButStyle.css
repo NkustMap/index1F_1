@@ -213,12 +213,13 @@ img{
 }
 
 /* 背景 */
-	.backg{
-		height: 1400px;
-		margin-top: 0;
-		background-image: url("../pic/backgg.jpg");
-		background-repeat: repeat;
-	}
+.backg{
+	weight:full;
+	margin-top: 0;
+	background-image: url("../pic/fff.jpg");
+	background-size: 100%;
+	background-repeat: repeat;
+}
 		
 
 /* 響應式 */
