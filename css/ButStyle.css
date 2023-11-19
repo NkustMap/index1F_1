@@ -357,6 +357,14 @@ img{
 	.item-back{	
 		width:395px;
 		height:90px;
-	}	
+	}
+
+	/* 小圖片 */
+	.icon-lost-people{
+		width:80px;
+		height:80px;
+		float: right;
+		bottom: 10px;
+	}
 		
 }
