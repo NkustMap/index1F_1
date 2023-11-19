@@ -345,7 +345,9 @@ img{
 		width:365px;
 		height:300px;
 		margin-left: 15px;
-		font-size: 15px;	
+		font-size: 18px;
+		line-height: 24px;　
+		letter-spacing: 3px;
 	}
 			
 	/* 回首頁圖的效果 */
