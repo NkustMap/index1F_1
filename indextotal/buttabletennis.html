@@ -65,26 +65,18 @@
 		<div class="item-Marquee">
 			<div class="box1">
 				<div class="list">
-					<img class="photo" src="..\pic\856917426.jpg">
-					<img class="photo" src="..\pic\01.jpg">
-					<img class="photo" src="..\pic\02.jpg">
-					<img class="photo" src="..\pic\03.jpg">
-					<img class="photo" src="..\pic\856917426.jpg">
-					<img class="photo" src="..\pic\856917426.jpg">
-					<img class="photo" src="..\pic\856917426.jpg">
-					<img class="photo" src="..\pic\856917426.jpg">
-					<img class="photo" src="..\pic\856917426.jpg">
+					<img class="photo" src="..\pic\map1.jpg">
 				</div>
 			</div>				
 		</div>
 			
 		<div class="item-button">
 			<div class="local">
-				<div onclick="pre()" class="button">
+				<div onclick="pre()" class="button" id="turnl">
 					<i class="fa-solid fa-left-long"></i>
 				</div>
 
-				<div onclick="nex()" class="button">
+				<div onclick="nex()" class="button" id="nextr">
 					<i class="fa-solid fa-right-long"></i>
 				</div>
 			</div>
@@ -150,19 +142,17 @@
 	}
 
 	<!-- 按鈕跑馬燈 --> 
-	 var cot = 0;
-		function nex(){
-			if(cot <= 7){
-				$('.list .photo').eq(cot).animate({'margin-left':'-999px'},999);
-				cot ++;
-			}
-		}
-		function pre(){
-        if(cot > -1){
-            $('.list .photo').eq(cot).animate({'margin-left':'0px'},999);
-            cot--;
-        }
-		}
+	 var x = 0;
+	
+	function nex(){
+		x = x+1;
+		document.getElementById("image").src = "../pic/map" +x+ ".jpg";
+	}
+	
+	function pre(){
+		x = x-1;
+		document.getElementById("image").src = "../pic/map" +x+ ".jpg";
+	}
 	</script>
 
 </body>
