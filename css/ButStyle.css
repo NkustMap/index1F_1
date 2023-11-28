@@ -203,14 +203,7 @@ img{
 	object-fit: cover;
 }
 
-/* 小圖片 */
-.icon-lost-people{
-	width:128px;
-	height:128px;
-	position:absolute;
-	top:800px;
-	left:150px;
-}
+
 
 /* 背景 */
 .backg{
@@ -357,15 +350,6 @@ img{
 	.item-back{	
 		width:395px;
 		height:90px;
-	}
-
-	/* 小圖片 */
-	.icon-lost-people{
-		width:80px;
-		height:80px;
-		position: relative;
-		top: 150px;
-		left:270px;
 	}
 		
 }
