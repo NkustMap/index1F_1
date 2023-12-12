@@ -276,10 +276,9 @@ img{
 		
 	.backg{
 		height: full;
-		weight: full;
+		weight: 395px;
 		margin-top: 0;
 		background-image: url("../pic/backgg.jpg");
-		background-repeat: repeat;
 	}
 			
 	/* 現在位置 */
