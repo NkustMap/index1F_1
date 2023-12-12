@@ -275,7 +275,7 @@ img{
 	/* 背景 */
 		
 	.backg{
-		height: 700px;
+		height: full;
 		weight: 395px;
 		margin-top: 0;
 		background-image: url("../pic/backgg.jpg");
