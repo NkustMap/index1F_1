@@ -329,7 +329,7 @@ a {
 		flex-direction: column;
 		width:95%;
 		height:95%;
-		margin-left:5;
+		margin-left:10;
 	}
 	.picL{
 		float: center;
@@ -353,11 +353,11 @@ a {
 		width:120px;
 		margin-top:12;
 		margin-bottom:20;
-		margin-right:-5;
-		margin-left:-5;
+		margin-right:10;
+		margin-left:10;
 	}
 	.placebut{
 		width:395px;
-		margin-left:-80;
+		margin-left:-40;
 	}
 }
