@@ -334,12 +334,12 @@ a {
 		float: center;
 		width:90%;
 		margin-bottom:30;
-		margin-left:-10px;
+		margin-left:-5px;
 	}
 	.toptext{
 		font-size: 28px;
 		font-weight:bold;
-		margin-left:-60px;
+		margin-left:-55px;
 		margin-bottom:20px;
 		margin-top:-20px;
 	}
@@ -353,11 +353,10 @@ a {
 		width:120px;
 		margin-top:12;
 		margin-bottom:20;
-		margin-right:2;
-		margin-right:2;
+		margin-right:0;
 	}
 	.placebut{
 		width:380px;
-		margin-left:-50;
+		margin-left:-60;
 	}
 }
