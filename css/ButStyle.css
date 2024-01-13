@@ -18,7 +18,7 @@ a {
 	color: #6C6C6C; 
 	background: transparent; 
 	border: 2px transparent;
-	padding: 4px 32px;
+	padding: 4px 24px;
 	text-align: center;
 	font-weight:bold;
 	display: inline-block;
@@ -28,11 +28,24 @@ a {
 	text-decoration: none;
 	text-transform: uppercase;
 }
-.logo{
-	width:300;
+.logoplace{
+	display:flex;
+	flex-direction:row;
+	margin-top:10px;
 }
-.divide{
-	width:100%;
+.logo{
+	width:45;
+	margin-right:15px;
+	margin-left:10px;
+}
+.logotext{
+	font-size:32px;
+	font-weight:bold;
+}
+
+.Divheader{
+	background-color:#FFF4C1;
+	height: 85px;
 }
 .navbar {
 	display: flex;
@@ -211,17 +224,30 @@ img{
 /* 響應式 */
 		
 @media only screen and (max-width: 395px) {
-	
+	.Divheader{
+		height: 70px;
+	}
+	.logoplace{
+		margin-top:5px;
+	}
+	.logo{
+		margin-bottom: 5px;
+	}
+	.logotext{
+		margin-top:5px;
+		font-size:25px;
+	}
 	/* 漢堡選單 */
 	.nav-menu {
 		position: fixed;
-		left: -100%;
+		right: -100%;
 		top: 5rem;
 		clear: both;
 		flex-direction: column;
-		background-color: #fff;
+		background-color: #E0E0E0;
 		opacity: 0.95;
-		width: 100%;
+		width: 60%;
+		margin-top:20px;
 		text-align: center;
 		transition: 0.3s;
 		border-style: 5px solid #efefef;
@@ -229,14 +255,13 @@ img{
 			0 10px 27px rgba(0, 0, 0, 0.05);
 					
 		.nav-link:hover{
-			background: #333;
 			width:100%;
 			color: white;
 			border-bottom: 0;
 		}
 	}
 	.nav-menu.active {
-		left: 0;
+		right: 0;
 	}
 	.nav-item {
 		margin: 1.5rem;
@@ -258,7 +283,7 @@ img{
 	/* LOGO */
 			
 	.logo{
-		width:215;
+		width:45;
 	}
 			
 	/* 界線 */
