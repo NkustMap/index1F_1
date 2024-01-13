@@ -343,5 +343,8 @@ img{
 		width:395px;
 		height:90px;
 	}
-		
+	.placebut{
+		width:480px;
+		margin-left:-40;
+	}	
 }
