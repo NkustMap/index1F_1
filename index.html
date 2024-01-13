@@ -19,17 +19,21 @@
 <body>
 
 	<header class="header">
+	<div class="Divheader">
         <nav class="navbar">
             <img class="logo" alt="國立高雄科技大學 校徽 LOGO" src="pic\182513897.png"/>
             <ul class="nav-menu">
+		<li class="nav-item">
+                    <a href="index.html" target="_self" class="nav-link">首頁</a>
+                </li>
+		<li class="nav-item">
+                    <a href="indextotal\nowplace.html" target="_self" class="nav-link">目前位置</a>
+                </li>  
                 <li class="nav-item">
                     <a href="indextotal\mapT.html" target="_self" class="nav-link">地圖總攬</a>
                 </li>
                 <li class="nav-item">
                     <a href="indextotal\floor_1.html" target="_self" class="nav-link">樓層介紹</a>
-                </li>
-                <li class="nav-item">
-                    <a href="index.html" target="_self" class="nav-link">目前位置</a>
                 </li>
                 <li class="nav-item">
                     <a href="https://www.nkust.edu.tw/" target="_self" class="nav-link">關於我們</a>
@@ -44,40 +48,28 @@
                 <span class="bar"></span>
             </div>
         </nav>
-		<div class="divide1">
-			<div class="range">
-				<img class="divide" src="pic\abc.JPG">
-			</div>
-		</div>
+	</div>	
 	</header>
 	
-	<div class="backg">
-		
-		<div class="nowplace">
-			<center><p>📍 目前所在的地點為K棟「活動中心」</p></center>
+	<div class="nowplace">
+			<center><p>活動中心 K棟</p></center>
 		</div>
-		<div class="below">
-				<img class="picL" src="pic\n1.png">
-				<div class="rrr">
-				<img class="picR" src="pic\456.png">
-				
-				<div class="placebut">
-					<center>
-					<button class="btn-80" onclick="self.location.href='https://NkustMap.github.io/index1F_1/indextotal/but711.html'"><span>7-11</span></button>
-					<button class="btn-80" onclick="self.location.href='https://NkustMap.github.io/index1F_1/indextotal/buteat.html'"><span>學餐</span></button>
-					<button class="btn-80" onclick="self.location.href='https://NkustMap.github.io/index1F_1/indextotal/butstationery.html'"><span>圖文部</span></button>
-					<button class="btn-80" onclick="self.location.href='https://NkustMap.github.io/index1F_1/indextotal/butcopy.html'"><span>影印部</span></button>
-					<button class="btn-80" onclick="self.location.href='https://NkustMap.github.io/index1F_1/indextotal/butphysical.html'"><span>體育館</span></button>
-					<button class="btn-80" onclick="self.location.href='https://NkustMap.github.io/index1F_1/indextotal/butdance.html'"><span>舞蹈教室</span></button>
-					<button class="btn-80" onclick="self.location.href='https://NkustMap.github.io/index1F_1/indextotal/butactivities.html'"><span>團康教室</span></button>
-					<button class="btn-80" onclick="self.location.href='https://NkustMap.github.io/index1F_1/indextotal/butfloor.html'"><span>地板教室</span></button>
-					<button class="btn-80" onclick="self.location.href='https://NkustMap.github.io/index1F_1/indextotal/buttabletennis.html'"><span>桌撞球室</span></button>
-					</center>
-				</div>
-				
-				</div>
+		<div class="SelectActivity">
+		<center>
+			<div class="butdiv">
+				<button class="butstyle" onclick="self.location.href='indextotal\nowplace.html'"><div class="butinside"><img src="pic\nowplace.png" class="nowplacestyle" alt="目前位置"><span class="butfont">目前位置</span></div></button>
+				<button class="butstyle" onclick="self.location.href='index.html'"><div class="butinside"><img src="pic\AR.png" class="nowplacestyle" alt="AR導覽"><span class="butfont">AR導覽</span></div></button>
+			</div>
+			<div class="butdiv">
+				<button class="butstyle" onclick="self.location.href='indextotal\mapT.html'"><div class="butinside"><img src="pic\mapicon.png" class="nowplacestyle" alt="地圖總攬"><span class="butfont">地圖總攬</span></div></button>
+				<button class="butstyle" onclick="self.location.href='indextotal\floor.html'"><div class="butinside"><img src="pic\flooricon.png" class="nowplacestyle" alt="樓層介紹"><span class="butfont">樓層介紹</span></div></button>
+			</div>
+			<div class="butdiv">
+				<button class="butstyle" onclick="self.location.href='https://www.nkust.edu.tw/'"><div class="butinside"><img src="pic\abouticon.png" class="nowplacestyle" alt="關於我們"><span class="butfont">關於我們</span></div></button>
+				<button class="butstyle" onclick="self.location.href='indextotal\other.html'"><div class="butinside"><img src="pic\serviceicon.png" class="nowplacestyle" alt="其他協助"><span class="butfont">其他協助</span></div></button>
+			</div>
+		</center>
 		</div>
-	</div>
 	
 	<script>
 	const hamburger = document.querySelector(".hamburger");
