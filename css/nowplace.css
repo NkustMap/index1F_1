@@ -327,15 +327,15 @@ a {
 	/* 現在地圖 */
 	.below{
 		flex-direction: column;
-		width:95%;
-		height:95%;
+		width:93%;
+		height:93%;
 		margin-left:10;
 	}
 	.picL{
 		float: center;
 		width:90%;
 		margin-bottom:30;
-		margin-right:50;
+		margin-right:45;
 		margin-left:15px;
 	}
 	.toptext{
