@@ -334,11 +334,12 @@ a {
 		float: center;
 		width:90%;
 		margin-bottom:30;
+		margin-left:-10px;
 	}
 	.toptext{
 		font-size: 28px;
 		font-weight:bold;
-		margin-left:-50px;
+		margin-left:-60px;
 		margin-bottom:20px;
 		margin-top:-20px;
 	}
