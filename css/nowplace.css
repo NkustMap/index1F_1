@@ -326,8 +326,8 @@ a {
 	/* 現在地圖 */
 	.below{
 		flex-direction: column;
-		width:100%;
-		height:100%;
+		width:365px;
+		height:350px;
 		margin-left:15;
 	}
 	.picL{
