@@ -1,0 +1,366 @@
+/* 上方區域+漢堡選單 */
+		
+		
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	font-family: 'Roboto', sans-serif;
+}
+		
+li {
+	list-style: none;
+}
+a {
+	color: #6C6C6C; 
+	background: transparent; 
+	border: 2px transparent;
+	padding: 4px 24px;
+	text-align: center;
+	font-weight:bold;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.logoplace{
+	display:flex;
+	flex-direction:row;
+	margin-top:10px;
+}
+.logo{
+	width:45;
+	margin-right:15px;
+	margin-left:10px;
+}
+.logotext{
+	font-size:32px;
+	font-weight:bold;
+}
+
+.Divheader{
+	background-color:#FFF4C1;
+	height: 85px;
+}
+		
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 1.5rem;
+	margin-right:0;
+	margin-bottom: 10px;
+}
+.hamburger {
+	display: none;
+}
+.bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: #101010;
+}
+.nav-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-item {
+	margin-left: 5rem;
+	margin-bottom:-15px;
+}
+.nav-link:hover{
+	color: black;
+	border-bottom: 2px solid #7B7B7B;
+}
+		
+
+/* 漢堡icon變叉叉 */
+.hamburger.active .bar:nth-child(2) {
+	opacity: 0;
+}
+.hamburger.active .bar:nth-child(3) {
+	transform: translateY(-8px) rotate(-45deg);
+}
+.hamburger.active .bar:nth-child(1) {
+	transform: translateY(8px) rotate(45deg);
+}
+
+		
+/* 下方區域 */
+	
+
+.below{
+	display:flex;
+	width:full;
+	height: 490px;
+	margin-left:110;
+	margin-right:110;
+	margin-top:50px;
+}
+.rrr{
+	float: right;
+	margin-top: 40px;
+	
+}
+.picL{
+	width:100%;
+	margin-right:80;
+}
+.toptext{
+	font-size: 48px;
+	margin-bottom: 30px;
+	margin-left: -40px;
+}
+		
+/* 選擇前往地點的按鈕 */
+.placebut{
+	width:600px;
+	margin-left:-45px;
+}
+		
+/* 選擇前往地點的按鈕樣式 */
+.btn-80,
+.btn-80 *,
+.btn-80 :after,
+.btn-80 :before,
+.btn-80:after,
+.btn-80:before {
+	border: 0 solid;
+	box-sizing: border-box;
+}
+.btn-80 {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-appearance: button;
+	background-color: #000;
+	background-image: none;
+	color: #fff;
+	cursor: pointer;
+	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+		Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+		Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+	font-size: 200%;
+	font-weight: 900;
+	line-height: 1.5;
+	width:150px;
+	margin: 20;
+	-webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+	padding: 0;
+	display: inline-block;
+	}
+	.btn-80:disabled {
+		cursor: default;
+	}
+	.btn-80:-moz-focusring {
+		outline: auto;
+	}
+	.btn-80 svg {
+		display: block;
+		vertical-align: middle;
+	}
+	.btn-80 [hidden] {
+		display: none;
+	}
+	.btn-80 {
+		border: 2px solid;
+		border-radius: 999px;
+		box-sizing: border-box;
+		display: block;
+		overflow: hidden;
+		padding: 1.2rem 3rem;
+		position: relative;
+		text-transform: uppercase;
+		display: inline-block;
+	}
+	.btn-80 span {
+		font-weight: 900;
+		mix-blend-mode: difference;
+	}
+	.btn-80:before {
+		background: #fff;
+		content: "";
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+	}
+	.btn-80:hover:before {
+		-webkit-animation: progress-bar 1.2s;
+		animation: progress-bar 1.2s;
+	}
+	@-webkit-keyframes progress-bar {
+		0% {
+			opacity: 1;
+			width: 0;
+		}
+		10% {
+			opacity: 1;
+			width: 15%;
+		}
+		25% {
+			opacity: 1;
+			width: 25%;
+		}
+		40% {
+			opacity: 1;
+			width: 35%;
+		}
+		55% {
+			opacity: 1;
+			width: 75%;
+		}
+		60% {
+			opacity: 1;
+			width: 100%;
+		}
+		to {
+			opacity: 0;
+			width: 100%;
+		}
+	}
+	@keyframes progress-bar {
+		0% {
+			opacity: 1;
+			width: 0;
+		}
+		10% {
+			opacity: 1;
+			width: 15%;
+		}
+		25% {
+			opacity: 1;
+			width: 25%;
+		}
+		40% {
+			opacity: 1;
+			width: 35%;
+		}
+		55% {
+			opacity: 1;
+			width: 75%;
+		}
+		60% {
+			opacity: 1;
+			width: 100%;
+		}
+		to {
+			opacity: 0;
+			width: 100%;
+		}
+	}
+
+	
+		
+
+
+
+/* 響應式 */
+		
+@media only screen and (max-width: 768px) {
+		
+		
+	.Divheader{
+		height: 70px;
+	}
+	.logoplace{
+		margin-top:5px;
+	}
+	.logo{
+		margin-bottom: 5px;
+	}
+	.logotext{
+		margin-top:5px;
+		font-size:25px;
+	}
+			
+	/* 漢堡選單 */
+	.nav-menu {
+		position: fixed;
+		right: -100%;
+		top: 5rem;
+		clear: both;
+		flex-direction: column;
+		background-color: #E0E0E0;
+		opacity: 0.95;
+		width: 60%;
+		text-align: center;
+		margin-top:20px;
+		transition: 0.3s;
+		border-style: 5px solid #efefef;
+		box-shadow:
+			0 10px 27px rgba(0, 0, 0, 0.05);
+					
+		.nav-link:hover{
+			width:100%;
+			color: white;
+			border-bottom: 0;
+		}
+	}
+	.nav-menu.active {
+		right: 0;
+	}
+	.nav-item {
+		margin: 1.5rem;
+	}
+	a {
+		font-size: 20px;
+		padding:full;
+	}
+	.nav-link{
+		color: black;
+		width: 100%;
+	}
+			
+	.hamburger {
+		display: block;
+		cursor: pointer;
+	}
+	
+	/* LOGO */
+	.logo{
+		width:45;
+	}
+
+	/* 現在地圖 */
+	.below{
+		flex-direction: column;
+		width:100%;
+		height:100%;
+		margin-left:30;
+	}
+	.picL{
+		float: center;
+		width:90%;
+		margin-bottom:30;
+	}
+	.toptext{
+		font-size: 28px;
+		font-weight:bold;
+		margin-left:-50px;
+		margin-bottom:20px;
+		margin-top:-20px;
+	}
+	/* 現在位置按鈕 */
+	.btn-80{
+		font-size:150%;
+		width:130px;
+		margin-top:12;
+		margin-bottom:20;
+		margin-right:5;
+		margin-right:5;
+	}
+	.placebut{
+		width:500px;
+		margin-left:-40;
+	}
+}
