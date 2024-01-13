@@ -353,10 +353,10 @@ a {
 		width:120px;
 		margin-top:12;
 		margin-bottom:20;
-		margin-right:0;
+		margin-right:-5;
 	}
 	.placebut{
 		width:380px;
-		margin-left:-60;
+		margin-left:-65;
 	}
 }
