@@ -286,19 +286,7 @@ img{
 		width:45;
 	}
 			
-	/* 界線 */
-			
-	.range{
-		overflow:hidden;
-		width:100%;
-		height:10px;
-	}
-	.divide{
-		width:300%;
-	}
 
-
-			
 	/* 現在位置 */
 			
 	.nowplace{
