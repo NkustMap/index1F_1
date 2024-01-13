@@ -335,12 +335,12 @@ a {
 		float: center;
 		width:90%;
 		margin-bottom:30;
-		margin-left:-5px;
+		margin-right:70;
 	}
 	.toptext{
 		font-size: 28px;
 		font-weight:bold;
-		margin-left:-55px;
+		margin-left:-45px;
 		margin-bottom:20px;
 		margin-top:-20px;
 	}
