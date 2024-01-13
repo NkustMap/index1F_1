@@ -335,19 +335,16 @@ a {
 		float: center;
 		width:90%;
 		margin-bottom:30;
-		margin-right:70;
+		margin-right:60;
 	}
 	.toptext{
 		font-size: 28px;
 		font-weight:bold;
-		margin-left:-45px;
+		margin-left:-35px;
 		margin-bottom:20px;
 		margin-top:-20px;
 	}
-	/* 現在位置 */
-	.nowplace{
-		font-size: 24px;
-	}
+	
 	/* 現在位置按鈕 */
 	.btn-80{
 		font-size:120%;
