@@ -336,6 +336,7 @@ a {
 		width:90%;
 		margin-bottom:30;
 		margin-right:60;
+		margin-left:10px;
 	}
 	.toptext{
 		font-size: 28px;
@@ -343,6 +344,7 @@ a {
 		margin-left:-35px;
 		margin-bottom:20px;
 		margin-top:-20px;
+		margin-left:10px;
 	}
 	
 	/* 現在位置按鈕 */
@@ -352,6 +354,7 @@ a {
 		margin-top:12;
 		margin-bottom:20;
 		margin-right:-5;
+		margin-left:-5;
 	}
 	.placebut{
 		width:395px;
