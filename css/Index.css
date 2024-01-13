@@ -47,9 +47,11 @@ a {
 	align-items: center;
 	padding: 1rem 1.5rem;
 	margin-right:0;
+	margin-bottom: 10px;
 }
 .hamburger {
 	display: none;
+	
 }
 .bar {
 	display: block;
@@ -90,7 +92,7 @@ a {
 /* 下方區域 */
 	
 .nowplace{
-	margin-top:20;
+	margin-top:30;
 	margin-bottom:30;
 	font-weight:bold;
 	font-size: 30px;
@@ -165,6 +167,7 @@ a {
 	.Divheader{
 		height: 70px;
 	}
+			
 	/* 漢堡選單 */
 	.nav-menu {
 		position: fixed;
@@ -175,18 +178,17 @@ a {
 		background-color: #E0E0E0;
 		opacity: 0.95;
 		width: 60%;
-		margin:20px;
+		margin-top:20px;
 		text-align: center;
 		transition: 0.3s;
-		border-style: 5px solid #efefef;
 		box-shadow:
 			0 10px 27px rgba(0, 0, 0, 0.05);
 					
-		.nav-link:hover{
-			width:100%;
-			color: white;
-			border-bottom: 0;
-		}
+	}
+	.nav-link:hover{
+		width:100%;
+		color: white;
+		border-bottom: 0;
 	}
 	.nav-menu.active {
 		right: 0;
@@ -219,11 +221,5 @@ a {
 	.SelectActivity{
 		margin: 10px;
 	}
-	/* 按鈕樣式 */
-
-	.butstyle{
-		margin-top:15px;
-		margin-right:30px;
-		margin-left: 30px;
-	}
+	
 }
