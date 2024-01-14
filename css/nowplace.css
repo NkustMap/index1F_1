@@ -335,16 +335,15 @@ a {
 		float: center;
 		width:90%;
 		margin-bottom:30;
-		margin-right:45;
-		margin-left:25px;
+		margin-right:35;
+		margin-left:35px;
 	}
 	.toptext{
 		font-size: 28px;
 		font-weight:bold;
-		margin-left:-35px;
+		margin-left:-20px;
 		margin-bottom:20px;
 		margin-top:-20px;
-		margin-left:10px;
 	}
 	
 	/* 現在位置按鈕 */
